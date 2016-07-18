@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035515821D3D736F0035B0A6 /* FBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE4FB189F02F800DA6A5D /* FBAppDelegate.m */; };
+		035515831D3D736F0035B0A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EFE4F7189F02F800DA6A5D /* main.m */; };
+		035515861D3D736F0035B0A6 /* libFBTweak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE523189F04B000DA6A5D /* libFBTweak.a */; };
+		035515871D3D736F0035B0A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE4ED189F02F800DA6A5D /* CoreGraphics.framework */; };
+		035515881D3D736F0035B0A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE4EF189F02F800DA6A5D /* UIKit.framework */; };
+		035515891D3D736F0035B0A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE4EB189F02F800DA6A5D /* Foundation.framework */; };
+		0355158B1D3D736F0035B0A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EFE4F4189F02F800DA6A5D /* InfoPlist.strings */; };
+		0355158C1D3D736F0035B0A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EFE4FD189F02F800DA6A5D /* Images.xcassets */; };
 		18EFE4EC189F02F800DA6A5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE4EB189F02F800DA6A5D /* Foundation.framework */; };
 		18EFE4EE189F02F800DA6A5D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE4ED189F02F800DA6A5D /* CoreGraphics.framework */; };
 		18EFE4F0189F02F800DA6A5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFE4EF189F02F800DA6A5D /* UIKit.framework */; };
@@ -19,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035515901D3D736F0035B0A6 /* FBTweakExampleAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBTweakExampleAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EFE4E8189F02F800DA6A5D /* FBTweakExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBTweakExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EFE4EB189F02F800DA6A5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18EFE4ED189F02F800DA6A5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,6 +45,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		035515841D3D736F0035B0A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035515861D3D736F0035B0A6 /* libFBTweak.a in Frameworks */,
+				035515871D3D736F0035B0A6 /* CoreGraphics.framework in Frameworks */,
+				035515881D3D736F0035B0A6 /* UIKit.framework in Frameworks */,
+				035515891D3D736F0035B0A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18EFE4E5189F02F800DA6A5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				18EFE4E8189F02F800DA6A5D /* FBTweakExample.app */,
+				035515901D3D736F0035B0A6 /* FBTweakExampleAppleTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +127,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		035515801D3D736F0035B0A6 /* FBTweakExampleAppleTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0355158D1D3D736F0035B0A6 /* Build configuration list for PBXNativeTarget "FBTweakExampleAppleTV" */;
+			buildPhases = (
+				035515811D3D736F0035B0A6 /* Sources */,
+				035515841D3D736F0035B0A6 /* Frameworks */,
+				0355158A1D3D736F0035B0A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBTweakExampleAppleTV;
+			productName = FBTweakExample;
+			productReference = 035515901D3D736F0035B0A6 /* FBTweakExampleAppleTV.app */;
+			productType = "com.apple.product-type.application";
+		};
 		18EFE4E7189F02F800DA6A5D /* FBTweakExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18EFE514189F02F800DA6A5D /* Build configuration list for PBXNativeTarget "FBTweakExample" */;
@@ -146,11 +184,21 @@
 			projectRoot = "";
 			targets = (
 				18EFE4E7189F02F800DA6A5D /* FBTweakExample */,
+				035515801D3D736F0035B0A6 /* FBTweakExampleAppleTV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0355158A1D3D736F0035B0A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0355158B1D3D736F0035B0A6 /* InfoPlist.strings in Resources */,
+				0355158C1D3D736F0035B0A6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18EFE4E6189F02F800DA6A5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +211,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		035515811D3D736F0035B0A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				035515821D3D736F0035B0A6 /* FBAppDelegate.m in Sources */,
+				035515831D3D736F0035B0A6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18EFE4E4189F02F800DA6A5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +243,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0355158E1D3D736F0035B0A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBTweakExample/FBTweakExample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FBTweakExample/FBTweakExample-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0355158F1D3D736F0035B0A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FBTweakExample/FBTweakExample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FBTweakExample/FBTweakExample-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		18EFE512189F02F800DA6A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -225,6 +314,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -297,6 +387,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0355158D1D3D736F0035B0A6 /* Build configuration list for PBXNativeTarget "FBTweakExampleAppleTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0355158E1D3D736F0035B0A6 /* Debug */,
+				0355158F1D3D736F0035B0A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18EFE4E3189F02F800DA6A5D /* Build configuration list for PBXProject "FBTweakExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

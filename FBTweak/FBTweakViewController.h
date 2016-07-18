@@ -23,7 +23,7 @@ extern NSString *const FBTweakShakeViewControllerDidDismissNotification;
 /**
   @abstract A view controller that shows the list of tweaks.
  */
-@interface FBTweakViewController : UINavigationController
+__TVOS_PROHIBITED @interface FBTweakViewController : UINavigationController
 
 /**
   @abstract Create a tweak view controller.
@@ -51,7 +51,7 @@ extern NSString *const FBTweakShakeViewControllerDidDismissNotification;
 /**
   @abstract Responds to actions from the tweak view controller.
  */
-@protocol FBTweakViewControllerDelegate <UINavigationControllerDelegate>
+__TVOS_PROHIBITED @protocol FBTweakViewControllerDelegate <UINavigationControllerDelegate>
 @required
 
 /**

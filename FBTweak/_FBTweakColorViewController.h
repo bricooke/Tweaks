@@ -14,7 +14,7 @@
 /**
   @abstract Displays a view to edit a tweak with color value.
  */
-@interface _FBTweakColorViewController : UIViewController
+__TVOS_PROHIBITED @interface _FBTweakColorViewController : UIViewController
 
 /**
   @abstract Create a RGB view controller.

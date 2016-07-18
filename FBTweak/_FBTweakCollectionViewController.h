@@ -15,7 +15,7 @@
 /**
   @abstract Displays configuration options for tweak collections.
  */
-@interface _FBTweakCollectionViewController : UIViewController
+__TVOS_PROHIBITED @interface _FBTweakCollectionViewController : UIViewController
 
 /**
   @abstract Create a tweak collection view controller.
@@ -40,6 +40,6 @@
   @abstract Called when done is selected.
   @param viewController The view controller that selected done.
  */
-- (void)tweakCollectionViewControllerSelectedDone:(_FBTweakCollectionViewController *)viewController;
+- (void)tweakCollectionViewControllerSelectedDone:(_FBTweakCollectionViewController *)viewController __TVOS_PROHIBITED;
 
 @end

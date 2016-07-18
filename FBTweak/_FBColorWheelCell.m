@@ -36,8 +36,10 @@ static CGFloat const _FBColorWheelIndicatorDiameter = 33.0;
     [self.layer addSublayer:_indicatorLayer];
 
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(_handlePanGesture:)];
+#if !TARGET_OS_TV
     panGestureRecognizer.minimumNumberOfTouches = 1;
     panGestureRecognizer.maximumNumberOfTouches = 1;
+#endif
     panGestureRecognizer.delegate = self;
     [self addGestureRecognizer:panGestureRecognizer];
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];

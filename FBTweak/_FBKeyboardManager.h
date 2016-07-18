@@ -13,7 +13,7 @@
   @abstract Keyboard manager.
   @discussion Adjusts the content so that the target object remains visible.
  */
-@interface _FBKeyboardManager : NSObject
+__TVOS_PROHIBITED @interface _FBKeyboardManager : NSObject
 
 /**
   @abstract Creates a keyboard manager.

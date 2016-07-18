@@ -14,7 +14,7 @@
 /**
   @abstract A table cell to edit a tweak.
  */
-@interface _FBTweakTableViewCell : UITableViewCell
+__TVOS_PROHIBITED @interface _FBTweakTableViewCell : UITableViewCell
 
 /**
   @abstract Create a tweak table cell.

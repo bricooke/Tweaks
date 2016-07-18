@@ -16,7 +16,7 @@
 /**
   @abstract Displays a list of items and allows selection.
  */
-@interface _FBTweakCategoryViewController : UIViewController
+__TVOS_PROHIBITED @interface _FBTweakCategoryViewController : UIViewController
 
 /**
   @abstract Creates a tweak category view controller.
@@ -37,7 +37,7 @@
 
 @end
 
-@protocol _FBTweakCategoryViewControllerDelegate <NSObject>
+__TVOS_PROHIBITED @protocol _FBTweakCategoryViewControllerDelegate <NSObject>
 
 /**
   @abstract Called when a category is selected.

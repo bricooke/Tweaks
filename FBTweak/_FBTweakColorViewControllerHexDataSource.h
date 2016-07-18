@@ -10,6 +10,6 @@
 #import <Foundation/Foundation.h>
 #import "_FBTweakColorViewControllerDataSource.h"
 
-@interface _FBTweakColorViewControllerHexDataSource : NSObject <_FBTweakColorViewControllerDataSource>
+__TVOS_PROHIBITED @interface _FBTweakColorViewControllerHexDataSource : NSObject <_FBTweakColorViewControllerDataSource>
 
 @end
